@@ -93,7 +93,7 @@ main {
     color: var(--light-gray);
 }
 
-.subBtn {
+.introBtnDiv button {
     background: var(--bright-blue);
     font-family: 'Raleway', sans-serif;
     color: var(--light-grayish-blue);
@@ -142,6 +142,7 @@ main {
     align-items: center;
     margin: 25px auto 25px;
     padding: 0 0 5px 0;
+    text-decoration: none;
     border-bottom: 1px solid var(--moderate-cyan);
     cursor: pointer;
 }
@@ -226,6 +227,16 @@ main {
     color: var(--light-gray);
 }
 
+.ctaBtnDiv button {
+    background: var(--bright-blue);
+    font-family: 'Raleway', sans-serif;
+    color: var(--light-grayish-blue);
+    font-weight: bold;
+    padding: 12.5px;
+    border-radius: 3px;
+    border: none;
+}
+
 footer {
     background: hsl(243, 87%, 12%);
     color: white;
@@ -233,7 +244,12 @@ footer {
 }
 
 .mailPhone {
-    margin-top: 50px;
+    position: relative;
+}
+
+.mailPhone > img {
+    position: relative;
+    top: -25px;
 }
 
 .phone {
@@ -271,4 +287,153 @@ footer a {
     padding: 5px;
     border: 1px solid white;
     width: 30px;
+}
+
+@media (min-width: 1000px) {
+    body {
+        
+    }
+
+    header {
+        margin: 50px 75px 25px;
+    }
+
+    header img {
+        width: auto;
+    }
+
+    .navHeader {
+        min-width: 250px;
+        max-width: 300px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .introduction {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 75px 0;
+        padding: 0 75px;
+    }
+
+    .introduction img {
+        width: 45%;
+    }
+
+    .introductionContent {
+        width: 45%;
+        margin: 0;
+        text-align: initial;
+    }
+
+    .introductionContent h1 {
+        font-size: 2.25em;
+        color: var(--very-dark-blue);
+    }
+
+    .introBtnDiv {
+        flex-direction: row;
+        margin: 25px 0 0;
+        width: 90%;
+    }
+
+    #inputIntro {
+        width: 60%;
+    }
+
+    .introBtnDiv button {
+        width: 40%;
+    }
+
+    .bgSeparator {
+        background-image: url(images/bg-curve-desktop.svg);
+        width: 100%;
+        height: 75px;
+    }
+
+    .descAndTestimonial {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 75px;
+    }
+
+    .fyloImg2 {
+        width: 45%;
+    }
+
+    .descAndTestimonialContent {
+        width: 45%;
+    }
+
+    .descAndTestimonial h2 {
+        font-size: 1.75em;
+        text-align: initial;
+    }
+
+    .seeFyloLink {
+        margin: 12.5px 0;
+    }
+
+    .testimonialDiv {
+        margin: 50px 0;
+        padding: 25px 50px;
+        width: 70%;
+    }
+
+    .callToActionDiv {
+        width: 100%;
+        padding: 100px 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: initial;
+    }
+
+    .ctaContentDiv {
+        width: 45%;
+    }
+
+    .callToActionDiv h2 {
+        font-size: 1.75em;
+    }
+
+    .ctaBtnDiv {
+        width: 45%;
+        margin: 0;
+        gap: 12.5px;
+    }
+
+    #inputCta {
+        padding: 12.5px 15px;
+        width: 100%;
+    }
+
+    #ctaBtn {
+        width: 40%;
+    }
+
+    footer {
+        padding: 100px 75px 75px;
+        width: 100%;
+        display: flex;
+        justify-content: initial;
+        gap: 200px;
+    }
+
+    .mailPhone {
+        position: relative;
+        margin: 0;
+    }
+
+    .socialNetworkLinks {
+        align-items: initial;
+    }
 }
