@@ -65,6 +65,7 @@ main {
 }
 
 .introductionContent {
+    position: relative;
     text-align: center;
     margin-top: 25px;
 }
@@ -77,6 +78,7 @@ main {
 }
 
 .introBtnDiv {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 12.5px;
@@ -101,6 +103,19 @@ main {
     padding: 12.5px;
     border-radius: 3px;
     border: none;
+    cursor: pointer;
+}
+.introBtnDiv button:hover {
+    background: rgba(48, 101, 248, 0.5);
+}
+
+.introResponse {
+    position: absolute;
+    top: 50px;
+    font-size: .75em;
+    font-weight: bold;
+    color: hotpink !important;
+    display: none;
 }
 
 .bgSeparator {
@@ -145,6 +160,10 @@ main {
     text-decoration: none;
     border-bottom: 1px solid var(--moderate-cyan);
     cursor: pointer;
+}
+.seeFyloLink:hover {
+    color: rgba(60, 159, 143, 0.25) !important;
+    border-color: rgba(60, 159, 143, 0.25) !important;
 }
 
 .seeFyloLink img {
@@ -194,6 +213,7 @@ main {
 }
 
 .callToActionDiv {
+    position: relative;
     background: var(--desaturated-blue);
     padding: 75px 40px;
     text-align: center;
@@ -210,6 +230,7 @@ main {
 }
 
 .ctaBtnDiv {
+    position: relative;
     margin-top: 25px;
     display: flex;
     flex-direction: column;
@@ -235,6 +256,18 @@ main {
     padding: 12.5px;
     border-radius: 3px;
     border: none;
+    cursor: pointer;
+}
+.ctaBtnDiv button:hover {
+    background: rgba(48, 101, 248, 0.5);
+}
+
+.ctaResponse {
+    position: relative;
+    top: -10px;
+    font-size: .75em;
+    font-weight: bold;
+    display: none;
 }
 
 footer {
@@ -270,9 +303,13 @@ footer {
     gap: 15px;
     margin-top: 50px;
 }
-footer a {
+
+.footerLinksDiv a {
     color: white;
     text-decoration: none;
+}
+.footerLinksDiv a:hover {
+    color: rgb(68, 61, 212);
 }
 
 .socialNetworkLinks {
@@ -282,18 +319,23 @@ footer a {
     gap: 15px;
     margin-top: 50px;
 }
-.socialNetworkLinks img {
+
+.socialNetworkLinks a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border: 1px solid #fff;
     border-radius: 50%;
     padding: 5px;
-    border: 1px solid white;
-    width: 30px;
+}
+
+.socialNetworkLinks a svg {
+    width: 18px;
+    height: 18px;
 }
 
 @media (min-width: 1000px) {
-    body {
-        
-    }
-
     header {
         margin: 50px 75px 25px;
     }
